@@ -25,16 +25,13 @@ Or clone the repo:
 Usage
 -----
 
-List random Culture ship names
-
-Usage:
     shipnames.py [-l | -s] [-a] [<amount>]
 
-Options:
-    -h --help   Show this screen
-    -l          Lowercase
-    -s          Slugify (spaces and punctuation become hyphens and lowercase)
-    -a          Show all in alphabetical order
+    Options:
+        -h --help   Show this screen
+        -l          Lowercase
+        -s          Slugify (spaces and punctuation become hyphens and lowercase)
+        -a          Show all in alphabetical order
 
 Example
 -------

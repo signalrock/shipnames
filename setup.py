@@ -20,7 +20,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if x.startsw
 setup(
     name='shipnames',
     version=__version__,
-    description=' Get random ship names from Ian Banks' Culture novels',
+    description=' Get random ship names from Ian Banks\' Culture novels',
     long_description=long_description,
     url='https://github.com/signalrock/shipnames',
     download_url='https://github.com/signalrock/shipnames/tarball/' + __version__,
@@ -33,7 +33,7 @@ setup(
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
-    author='Signal',
+    author='signal',
     install_requires=install_requires,
     dependency_links=dependency_links,
     author_email='raulcearock@gmail.com'

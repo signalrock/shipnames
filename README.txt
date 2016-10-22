@@ -7,7 +7,7 @@ author: Signal
 Overview
 --------
 
- Get random ship names from Ian Banks' Culture novels
+ Get random ship names from Iain Banks' Culture novels
 
 Installation / Usage
 --------------------

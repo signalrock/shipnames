@@ -20,7 +20,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if x.startsw
 setup(
     name='shipnames',
     version=__version__,
-    description=' Get random ship names from Ian Banks\' Culture novels',
+    description=' Get random ship names from Iain Banks\' Culture novels',
     long_description=long_description,
     url='https://github.com/signalrock/shipnames',
     download_url='https://github.com/signalrock/shipnames/tarball/' + __version__,

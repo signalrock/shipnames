@@ -1,7 +1,7 @@
 Culture Ship Name Picker
 ===============================
 
-version number: 0.0.1
+version number: 0.0.2
 author: Signal
 
 Overview
@@ -12,15 +12,9 @@ Overview
 Installation / Usage
 --------------------
 
-To install use pip:
-
-    $ pip install shipnames
-
-
-Or clone the repo:
+Clone the repo:
 
     $ git clone https://github.com/signalrock/shipnames.git
-    $ python setup.py install
 
 Usage
 -----

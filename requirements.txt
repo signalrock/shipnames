@@ -1,0 +1,10 @@
+# Dev/Deployment
+sphinx
+sphinx_rtd_theme
+nose
+coverage
+pypi-publisher
+
+docopt==0.6.2
+slugify==0.0.1
+wikitables==0.3.2

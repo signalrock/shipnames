@@ -16,11 +16,11 @@ Options:
 
 \n\n
 """
-
+from random import shuffle
 from docopt import docopt
 from wikitables import import_tables
-from random import shuffle
 from slugify import slugify
+
 
 def process(arguments):
     if arguments['<amount>']:
@@ -28,26 +28,27 @@ def process(arguments):
     else:
         amount = 1
     tables = import_tables('List of spacecraft in the Culture series')
-    l=[]
+    names = []
     for table in tables[:-1]:
         for row in table.rows:
             try:
-                l.append(row['Name'])
+                names.append(row['Name'])
             except KeyError:
                 pass
-    l=[i.value.replace('*','').strip(' ') for i in l]
+    names = [i.value.replace('*', '').strip(' ') for i in names]
     if arguments['-l']:
-        l = [i.lower() for i in l]
+        names = [i.lower() for i in names]
     if arguments['-s']:
-        l = [slugify(u"%s" % i) for i in l]
-    shuffle(l)
+        names = [slugify(u"%s" % i) for i in names]
+    shuffle(names)
     if arguments['-a']:
-        l.sort()
-        amount = len(l)
+        names.sort()
+        amount = len(names)
     print
-    for i in l[:amount]:
+    for i in names[:amount]:
         print i
     print
+
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)

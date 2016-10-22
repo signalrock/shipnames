@@ -22,9 +22,10 @@ from wikitables import import_tables
 from slugify import slugify
 
 
-def process(arguments):
-    if arguments['<amount>']:
-        amount = int(arguments['<amount>'])
+def process(args):
+    """Main body"""
+    if args['<amount>']:
+        amount = int(args['<amount>'])
     else:
         amount = 1
     tables = import_tables('List of spacecraft in the Culture series')
@@ -36,12 +37,12 @@ def process(arguments):
             except KeyError:
                 pass
     names = [i.value.replace('*', '').strip(' ') for i in names]
-    if arguments['-l']:
+    if args['-l']:
         names = [i.lower() for i in names]
-    if arguments['-s']:
+    if args['-s']:
         names = [slugify(u"%s" % i) for i in names]
     shuffle(names)
-    if arguments['-a']:
+    if args['-a']:
         names.sort()
         amount = len(names)
     print
@@ -51,5 +52,5 @@ def process(arguments):
 
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__)
-    process(arguments)
+    ARGS = docopt(__doc__)
+    process(ARGS)

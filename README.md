@@ -39,17 +39,17 @@ Options:
 Example
 -------
 
-~: python shipnames.py 3
+    ~: python shipnames.py 3
 
-Cargo Cult
-Nervous Energy
-Highpoint
+    Cargo Cult
+    Nervous Energy
+    Highpoint
 
 
-~: python shipnames.py 5 -s
+    ~: python shipnames.py 5 -s
 
-subtle-shift-in-emphasis
-unacceptable-behaviour
-now-we-try-it-my-way
-reasonable-excuse
-its-character-forming
+    subtle-shift-in-emphasis
+    unacceptable-behaviour
+    now-we-try-it-my-way
+    reasonable-excuse
+    its-character-forming
